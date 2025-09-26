@@ -23,7 +23,7 @@ El frontend lo compilé y generé los archivos estáticos para producción. Dent
 
 Todos los usuarios tienen autenticación cuando se loguean. Los endpoints no están protegidos porque no era un requisito funcional, pero sí implementé la autenticación con JWT.
 
-Agregué algo que no era requisito pero me pareció útil: la gestión de usuarios para poder manejar administradores y clientes por separado.
+Agregué algo que no era requisito pero me pareció útil la gestión de usuarios para poder manejar administradores y clientes por separado.
 
 ## Diagrama de Base de Datos
 
@@ -34,7 +34,7 @@ Agregué algo que no era requisito pero me pareció útil: la gestión de usuari
 
 La base de datos se crea automáticamente cuando prendés el backend, está configurado para que haga el "create_all".
 
-1. Primero ejecutá el docker-compose para levantar el contenedor de MySQL:
+1. Primero se ejecutá el docker-compose para levantar el contenedor de MySQL:
 ```bash
 docker-compose up -d
 ```
@@ -50,7 +50,7 @@ npm run dev
 ```
 ## El repositorio incluye
 
-- Todo el código fuente
+- Codigo back y front
 - El docker-compose para la base de datos
-- Un script con los inserts de prueba
+- Script con los inserts de prueba, necesario de ejecutar dentro de la base de datos una vez que se ejecuto el backend.
 - Las variables de entorno ya configuradas
