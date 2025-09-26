@@ -2,7 +2,7 @@
 
 Esta aplicación cumple con todos los requisitos funcionales que se pidieron en la prueba técnica.
 
-## Demo en Producción
+## Link de la pagina
 
 **URL**: [http://frontendpt25watts-env-4.eba-mh2fxvpg.us-east-2.elasticbeanstalk.com/login](http://frontendpt25watts-env-4.eba-mh2fxvpg.us-east-2.elasticbeanstalk.com/login)
 
