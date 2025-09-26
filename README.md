@@ -11,7 +11,7 @@ Esta aplicación cumple con todos los requisitos funcionales que se pidieron en 
 - **Administrador**: `santino` / `123`
 - **Cliente**: `eliseo` / `123`
 
-## Cómo está hecho
+## Resolucion
 
 Para el **backend** usé Node.js con Express. El **frontend** lo desarrollé en React con Vite. La **base de datos** la armé con MySQL.
 
@@ -19,7 +19,7 @@ Para desarrollo local utilicé Docker pulleando una imagen de MySQL, así no ten
 
 El frontend lo compilé y generé los archivos estáticos para producción. Dentro de AWS creé los entornos necesarios y configuré todo con variables de entorno para separar desarrollo de producción.
 
-## Lo que implementé
+## Autenticacion y usuarios
 
 Todos los usuarios tienen autenticación cuando se loguean. Los endpoints no están protegidos porque no era un requisito funcional, pero sí implementé la autenticación con JWT.
 
