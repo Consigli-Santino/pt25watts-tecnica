@@ -1,0 +1,27 @@
+version: '3.8'
+
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql_25beneficios
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: root25beneficios
+      MYSQL_DATABASE: 25beneficios
+      MYSQL_USER: beneficios_user
+      MYSQL_PASSWORD: beneficios123
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_25beneficios_data:/var/lib/mysql
+      - ./init:/docker-entrypoint-initdb.d
+    command: --default-authentication-plugin=mysql_native_password
+    networks:
+      - beneficios_network
+
+networks:
+  beneficios_network:
+    driver: bridge
+
+volumes:
+  mysql_25beneficios_data:

@@ -1,0 +1,151 @@
+
+:root {
+    --azul-principal:#0034C5;
+;
+    --gris-texto: #6b7280;
+    --gris-borde: #d1d5db;
+    --fondo-gris: #f8fafc;
+}
+
+
+body {
+    background-color: var(--fondo-gris);
+    font-family: Arial, sans-serif;
+}
+
+
+.pantalla-completa {
+    min-height: 100vh;
+}
+
+
+.tarjeta {
+    background: white;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+.titulo-principal {
+    color: var(--azul-principal);
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+.texto-gris {
+    color: var(--gris-texto);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+.input-personalizado {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid var(--gris-borde);
+    border-radius: 8px;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.input-personalizado:focus {
+    border-color: var(--azul-principal);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+
+.etiqueta {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+
+.boton-azul {
+    width: 100%;
+    background: var(--azul-principal);
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.boton-azul:hover {
+    background: #1d4ed8;
+}
+
+.boton-azul:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+
+.enlace-azul {
+    color: var(--azul-principal);
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.enlace-azul:hover {
+    text-decoration: underline;
+}
+
+
+.alerta-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+    padding: 12px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+
+.input-con-icono {
+    position: relative;
+}
+
+.icono-input {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color: var(--gris-texto);
+}
+
+
+.tabla {
+    width: 100%;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tabla th,
+.tabla td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid var(--gris-borde);
+}
+
+.tabla th {
+    background: var(--fondo-gris);
+    font-weight: 600;
+}
+
+
+.sidebar-azul {
+    background: var(--azul-principal);
+    width: 250px;
+    z-index: 1000;
+}
